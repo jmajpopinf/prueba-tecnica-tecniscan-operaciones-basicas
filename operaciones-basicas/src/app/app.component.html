@@ -1,0 +1,67 @@
+<app-menu></app-menu>
+
+<div class="card">
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Operaciones Básicas</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (submit)="realizarOperacion()" [formGroup]="form" class="formulario-operaciones">
+
+        <mat-form-field>
+          <mat-label>Primer numero</mat-label>
+          <input [formControl]="form.controls.primerNumero" matInput/>
+          <mat-error *ngIf="primerNumero?.hasError('required')">
+            Este campo es requerido
+          </mat-error>
+          <mat-error *ngIf="primerNumero?.hasError('pattern')">
+            Solo se permiten números
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Segundo numero</mat-label>
+          <input [formControl]="form.controls.segundoNumero" matInput/>
+          <mat-error *ngIf="segundoNumero?.hasError('required')">
+            Este campo es requerido
+          </mat-error>
+          <mat-error *ngIf="segundoNumero?.hasError('pattern')">
+            Solo se permiten números
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Operación</mat-label>
+          <mat-select [formControl]="form.controls.operacion" matSelect>
+            <mat-option value="sum">Suma</mat-option>
+            <mat-option value="subtract">Resta</mat-option>
+            <mat-option value="multiply">Multiplicación</mat-option>
+            <mat-option value="divide">División</mat-option>
+          </mat-select>
+          <mat-error *ngIf="operacion?.hasError('required')">
+            La operación es obligatoria.
+          </mat-error>
+        </mat-form-field>
+
+        <div class="form-buttons">
+          <button type="submit" mat-flat-button [disabled]="form.invalid">Calcular</button>
+          <button type="submit" mat-flat-button [disabled]="form.invalid" (click)="limpiarFormulario()">Limpiar</button>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-footer class="example-card-footer">
+      <div *ngIf="resultado; else noResultado">
+        <mat-chip-set aria-label="Chihuahua traits">
+          <mat-chip>Resultado: {{ resultado.resultado }}</mat-chip>
+        </mat-chip-set>
+      </div>
+      <ng-template #noResultado>
+        <mat-chip-set aria-label="Chihuahua traits">
+          <mat-chip>Resultado</mat-chip>
+        </mat-chip-set>
+      </ng-template>
+    </mat-card-footer>
+  </mat-card>
+</div>
+
+<router-outlet />

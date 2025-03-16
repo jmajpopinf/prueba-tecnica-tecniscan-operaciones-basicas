@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "dB8sKlleSa81TRROiK07fwBOpB9hLySGlBTBG0ksDCs=",
+  "Source": "ApiOperacionesBasicas",
+  "BasePath": "_content/ApiOperacionesBasicas",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

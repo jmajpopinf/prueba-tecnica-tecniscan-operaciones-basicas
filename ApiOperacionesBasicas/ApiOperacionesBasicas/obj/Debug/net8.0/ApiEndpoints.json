@@ -1,0 +1,107 @@
+[
+  {
+    "ContainingType": "ApiOperacionesBasicas.Controllers.Arithmetic",
+    "Method": "Division",
+    "RelativePath": "api/Arithmetic/divide/{num1}/{num2}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiOperacionesBasicas.Controllers.Arithmetic",
+    "Method": "Multiplicar",
+    "RelativePath": "api/Arithmetic/multiply/{num1}/{num2}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiOperacionesBasicas.Controllers.Arithmetic",
+    "Method": "Restar",
+    "RelativePath": "api/Arithmetic/subtract/{num1}/{num2}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiOperacionesBasicas.Controllers.Arithmetic",
+    "Method": "Sumar",
+    "RelativePath": "api/Arithmetic/sum/{num1}/{num2}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiOperacionesBasicas.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiOperacionesBasicas.WeatherForecast, ApiOperacionesBasicas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

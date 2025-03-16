@@ -1,0 +1,50 @@
+.formulario-operaciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.example-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.example-card-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+mat-card-title {
+  color: #ffffff; /* Azul Material Design */
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+.resultado {
+  color: #ffffff; /* Gris oscuro */
+  font-size: 1rem;
+  align-items: center;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 20px;
+}
